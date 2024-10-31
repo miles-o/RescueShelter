@@ -1,5 +1,7 @@
 package models.animals;
 
+import java.util.ArrayList;
+
 public class Animal {
     private String id;
     private String name;
@@ -13,6 +15,10 @@ public class Animal {
         this.age = age;
         this.gender = gender;
         this.family = family;
+    }
+
+    public String toString() {
+        return name;
     }
 
     // getters
@@ -35,6 +41,8 @@ public class Animal {
     public String getFamily() {
         return family;
     }
+
+
 
     // setters
     public void setId(String id) {

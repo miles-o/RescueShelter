@@ -17,6 +17,10 @@ public class Vet {
         this.organisation = "";
     }
 
+    public String toString() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -31,6 +35,14 @@ public class Vet {
 
     public String getName() {
         return name;
+    }
+
+    public String getOrganisation() {
+        return organisation;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
     public String reportDetails() {

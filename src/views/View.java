@@ -5,6 +5,12 @@ import controllers.Controller;
 public abstract class View {
     protected Controller controller;
 
+    public void begin() {
+        while (true) {
+            openMainMenu();
+        }
+    }
+
     public void setController(Controller controller) {
         this.controller = controller;
     }
@@ -14,10 +20,6 @@ public abstract class View {
         System.out.println(divider);
         System.out.println(errorMessage);
         System.out.println(divider);
-    }
-
-    public void displayString(String string) {
-        System.out.println(string);
     }
 
     public void openMainMenu() {

@@ -5,6 +5,8 @@ import models.vets.Vet;
 import models.*;
 import views.View;
 
+import java.util.ArrayList;
+
 
 public class Controller {
     private View view;
@@ -18,9 +20,10 @@ public class Controller {
 
         loadData();
         view.setController(this);
-        while (true) {
-            view.openMainMenu();
-        }
+    }
+
+    public void begin() {
+        view.begin();
     }
 
     //getters
@@ -28,6 +31,14 @@ public class Controller {
         Vet vet = vets.getVet(name);
 
         return vet;
+    }
+
+    public ArrayList<Vet> getVetList() {
+        return vets.getVetList();
+    }
+
+    public ArrayList<Animal> getAnimalList() {
+        return animals.getAnimalList();
     }
 
     public Animal getAnimal(String id) {
@@ -163,8 +174,8 @@ public class Controller {
         }
     }
 
-    public void setVetNumber(String vetName, String number) {
-        String error = vets.setVetNumber(vetName, number);
+    public void setVetPhone(String vetName, String newNumber) {
+        String error = vets.setVetPhone(vetName, newNumber);
 
         if (error != null) {
             throwError(error);

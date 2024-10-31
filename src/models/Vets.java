@@ -17,6 +17,10 @@ public class Vets {
         return null;
     }
 
+    public ArrayList<Vet> getVetList() {
+        return vets;
+    }
+
     public String addVet(Vet vet) {
         for (Vet v : vets) {
             if (v.getName().equals(vet.getName())) {
@@ -72,7 +76,7 @@ public class Vets {
         }
     }
 
-    public String setVetNumber(String vetName, String number) {
+    public String setVetPhone(String vetName, String newNumber) {
         Vet vet = null;
         for (Vet v : vets) {
             if (v.getName().equals(vetName)) {
@@ -82,7 +86,7 @@ public class Vets {
         if (vet == null) {
             return "Vet not found";
         }  else {
-            vet.setPhoneNumber(number);
+            vet.setPhoneNumber(newNumber);
             return null;
         }
     }

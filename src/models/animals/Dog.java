@@ -20,6 +20,22 @@ public class Dog extends Animal {
         this.vet = vet;
     }
 
+    public Vet getVet() {
+        return vet;
+    }
+
+    public boolean getDesexed() {
+        return desexed;
+    }
+
+    public boolean getCatFriendly() {
+        return catFriendly;
+    }
+
+    public double getCareFees() {
+        return careFees;
+    }
+
     public void setDesexed(boolean desexed) {
         this.desexed = desexed;
     }
@@ -30,19 +46,6 @@ public class Dog extends Animal {
 
     public void setCatFriendly(boolean catFriendly) {
         this.catFriendly = catFriendly;
-    }
-
-    public double getCareFees() {
-        return careFees;
-    }
-
-    public boolean getCatFriendly() {
-        return catFriendly;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + vet + " " + desexed + " " + catFriendly + " " + careFees;
     }
 
     @Override

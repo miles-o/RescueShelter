@@ -1,12 +1,8 @@
 package views;
 
-import controllers.Controller;
-import models.Vets;
 import models.animals.Animal;
 import models.animals.Dog;
 import models.vets.Vet;
-
-import java.util.Locale;
 
 public class CLIView extends View{
     private String mainMenu;
@@ -48,7 +44,7 @@ public class CLIView extends View{
 
     public void openMainMenu() {
         displayMenu(mainMenu);
-        String input = System.console().readLine();
+        String input = System.console().readLine().toLowerCase();
         switch (input) {
             case "1" -> openNewVet();
             case "2" -> openNewAnimal();
@@ -57,10 +53,8 @@ public class CLIView extends View{
             case "5" -> openModifyVet();
             case "6" -> openModifyAnimal();
             case "7" -> openReportViewer();
-            case "Q" -> System.exit(0);
-            default -> {
-                super.displayError("Invalid input");
-            }
+            case "q" -> System.exit(0);
+            default -> super.displayError("Invalid input");
         }
     }
 
@@ -233,7 +227,7 @@ public class CLIView extends View{
                 case "3" -> {
                     System.out.println("Enter new phone number");
                     String newPhoneNumber = System.console().readLine();
-                    controller.setVetNumber(vetName, newPhoneNumber);
+                    controller.setVetPhone(vetName, newPhoneNumber);
                     return;
                 }
                 default -> super.displayError("Invalid input");
@@ -263,13 +257,11 @@ public class CLIView extends View{
                     System.out.println("Enter new id");
                     String newId = System.console().readLine();
                     controller.setAnimalId(animalId, newId);
-                    return;
                 }
                 case "2" -> {
                     System.out.println("Enter new name");
                     String newName = System.console().readLine();
                     controller.setAnimalName(animalId, newName);
-                    return;
                 }
                 case "3" -> {
                     while (true) {
@@ -287,7 +279,6 @@ public class CLIView extends View{
                     System.out.println("Enter new gender");
                     String newGender = System.console().readLine();
                     controller.setAnimalGender(animalId, newGender);
-                    return;
                 }
                 case "5" -> {
                     while (true) {
@@ -316,7 +307,6 @@ public class CLIView extends View{
                     System.out.println("Is dog cat friendly?");
                     boolean catFriendly = getBooleanInput();
                     controller.setAnimalCatFriendly(animalId, catFriendly);
-                    break;
                 }
                 case "8" -> {
                     while (true) {
@@ -340,13 +330,11 @@ public class CLIView extends View{
                     System.out.println("Enter new id");
                     String newId = System.console().readLine();
                     controller.setAnimalId(animalId, newId);
-                    return;
                 }
                 case "2" -> {
                     System.out.println("Enter new name");
                     String newName = System.console().readLine();
                     controller.setAnimalName(animalId, newName);
-                    return;
                 }
                 case "3" -> {
                     while (true) {
@@ -364,13 +352,11 @@ public class CLIView extends View{
                     System.out.println("Enter new gender");
                     String newGender = System.console().readLine();
                     controller.setAnimalGender(animalId, newGender);
-                    return;
                 }
                 case "5" -> {
                     System.out.println("Enter family");
                     String newFamily = System.console().readLine();
                     controller.setAnimalFamily(animalId, newFamily);
-                    return;
                 }
                 default -> super.displayError("Invalid input");
             }

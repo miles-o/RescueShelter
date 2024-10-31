@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="views.GUIElements.GUIForms.MainMenu">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="6" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="573" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-328966"/>
+      <enabled value="true"/>
+      <font size="14" style="0"/>
+      <foreground color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="882b7" class="javax.swing.JButton" binding="addAnimal">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3355187"/>
+          <borderPainted value="false"/>
+          <doubleBuffered value="false"/>
+          <focusPainted value="false"/>
+          <font/>
+          <foreground color="-16777216"/>
+          <hideActionText value="false"/>
+          <text value="Add animal"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+      </component>
+      <component id="1ad40" class="javax.swing.JButton" binding="removeVet">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3355187"/>
+          <borderPainted value="false"/>
+          <doubleBuffered value="false"/>
+          <focusPainted value="false"/>
+          <foreground color="-16777216"/>
+          <text value="Remove vet"/>
+        </properties>
+      </component>
+      <vspacer id="7939b">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="200"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="c45f9" class="javax.swing.JButton" binding="addVet">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3355187"/>
+          <borderPainted value="false"/>
+          <doubleBuffered value="false"/>
+          <focusPainted value="false"/>
+          <foreground color="-16777216"/>
+          <text value="Add vet"/>
+        </properties>
+      </component>
+      <component id="fbe81" class="javax.swing.JButton" binding="removeAnimal">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3355187"/>
+          <borderPainted value="true"/>
+          <doubleBuffered value="false"/>
+          <focusPainted value="false"/>
+          <foreground color="-16777216"/>
+          <text value="Remove animal"/>
+        </properties>
+      </component>
+      <hspacer id="bf6ee">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="10" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <vspacer id="d33ad">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="61710">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="e4851">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="10" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="70648" class="javax.swing.JButton" binding="modifyAnimal">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3355187"/>
+          <borderPainted value="false"/>
+          <doubleBuffered value="false"/>
+          <focusPainted value="false"/>
+          <foreground color="-16777216"/>
+          <text value="Modify animal"/>
+        </properties>
+      </component>
+      <component id="7664f" class="javax.swing.JButton" binding="modifyVet">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3355187"/>
+          <borderPainted value="false"/>
+          <doubleBuffered value="false"/>
+          <focusPainted value="false"/>
+          <foreground color="-16777216"/>
+          <text value="Modify vet"/>
+        </properties>
+      </component>
+      <component id="11b70" class="javax.swing.JButton" binding="save">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <actionCommand value="Save"/>
+          <autoscrolls value="false"/>
+          <background color="-3355187"/>
+          <borderPainted value="false"/>
+          <defaultCapable value="true"/>
+          <focusPainted value="false"/>
+          <foreground color="-16777216"/>
+          <text value="Export"/>
+        </properties>
+      </component>
+      <component id="ac197" class="javax.swing.JButton" binding="saveAndQuit">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-3355187"/>
+          <borderPainted value="false"/>
+          <focusPainted value="false"/>
+          <foreground color="-16777216"/>
+          <label value="Save and Quit"/>
+          <text value="Save and Quit"/>
+        </properties>
+      </component>
+      <component id="c6f9c" class="javax.swing.JButton" binding="reportViewer">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Report Viewer"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
